@@ -1,2 +1,2 @@
 # YahtzeeClone
-Yahtzee clone using Javascript
+Yahtzee clone using "vanilla" Javascript
