@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CHER-AHTZEE!</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+  <h1 class="heading">Cher-ahtzee!</h1>
+
+  <!-- dice area -->
+  <div class="container-fluid background">
+
+    <!-- first three dice -->
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="dice-6.png" alt="Dice" class="dice" id="dice-1"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+
+      <div class="col-lg-2">
+        <img src="dice-5.png" alt="Dice" class="dice" id="dice-2"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+
+      <div class="col-lg-2">
+        <img src="dice-4.png" alt="Dice" class="dice" id="dice-3"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+
+
+      <!-- last three dice -->
+
+      <div class="col-lg-2">
+        <img src="dice-3.png" alt="Dice" class="dice" id="dice-4"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+
+      <div class="col-lg-2">
+        <img src="dice-2.png" alt="Dice" class="dice" id="dice-5"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+
+      <div class="col-lg-2">
+        <img src="dice-1.png" alt="Dice" class="dice" id="dice-6"><br>
+        <button class="btn-hold">Hold</button>
+      </div>
+    </div>
+
+ <br>
+    <button class="rollButton">Roll Dice</button>
+<button class="nextTurnButton">Next Turn</button>
+<button class="newGameButton">New Game</button>
+<br>
+<br>
+
+    <!-- scorecard -->
+    <div class="row">
+
+
+      <div class="col-lg-6 top-scores">
+        <form class="" action="index.html" method="post">
+
+          <label for="ones">Ones:</label>
+          <input type="text" id="ones" name="ones">
+          <br>
+          <label for="twos">Twos:</label>
+          <input type="text" id="twos" name="twos">
+          <br>
+          <label for="threes">Threes:</label>
+          <input type="text" id="threes" name="threes">
+          <br>
+          <label for="fours">Four:</label>
+          <input type="text" id="fours" name="fours">
+          <br>
+          <label for="fives">Fives:</label>
+          <input type="text" id="fives" name="fives">
+          <br>
+          <label for="sixes">Sixes:</label>
+          <input type="text" id="sixes" name="sixes">
+        </form>
+      </div>
+
+
+      <div class="col-lg-6 bottom-scores">
+
+        <form class="" action="index.html" method="post">
+
+          <label for="ones">3 of a Kind:</label>
+          <input type="text" id="threeOfAKind" name="threeOfAKind">
+          <br>
+          <label for="twos">4 of a Kind:</label>
+          <input type="text" id="fourOfAKind" name="fourOfAKind">
+          <br>
+          <label for="threes">Full House:</label>
+          <input type="text" id="fullHouse" name="fullHouse">
+          <br>
+          <label for="fours">Sm Straight:</label>
+          <input type="text" id="smStraight" name="smStraight">
+          <br>
+          <label for="fives">Lg Straight:</label>
+          <input type="text" id="lgStraight" name="lgStraight">
+          <br>
+          <label for="sixes">Yahtzee:</label>
+          <input type="text" id="yahtzee" name="yahtzee">
+          <br>
+          <label for="sixes">Chance:</label>
+          <input type="text" id="chance" name="chance">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+
+<footer>
+  Thanks for playing!
+</footer>
+
+</html>
