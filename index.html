@@ -20,46 +20,67 @@
     <!-- dice area -->
     <div class="container-fluid background">
 
-        <!--  dice images and hold buttons-->
+        <!--  dice images-->
         <div class="row">
-            <div class="col-md">
+            <div class="col-sm">
                 <img src="dice-6.png" alt="Dice" class="dice" id="dice-1"><br>
-                <button class="btn btn-secondary active btn-hold">Hold</button>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm">
                 <img src="dice-6.png" alt="Dice" class="dice" id="dice-2"><br>
-                <button class="btn btn-secondary active btn-hold">Hold</button>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm">
                 <img src="dice-6.png" alt="Dice" class="dice" id="dice-3"><br>
-                <button class="btn btn-secondary active btn-hold">Hold</button>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm">
                 <img src="dice-6.png" alt="Dice" class="dice" id="dice-4"><br>
-                <button class="btn btn-secondary active btn-hold">Hold</button>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm">
                 <img src="dice-6.png" alt="Dice" class="dice" id="dice-5"><br>
-                <button class="btn btn-secondary active btn-hold">Hold</button>
             </div>
-
         </div>
 
-        <br>
-
-        <button class="rollButton">Roll Dice</button>
-        <button class="nextTurnButton">Next Turn</button>
-        <button class="newGameButton">New Game</button>
-        <br>
-        <br>
-
+        <!-- hold buttons -->
         <div class="row">
+            <div class="col-sm holdDice">
+                <button class="btn btn-secondary btn-sm btn-hold btnHoldOne" id="btnHoldOne">Hold</button>
+            </div>
 
-            <div class="col-md">
+            <div class="col-sm holdDice">
+                <button class="btn btn-secondary btn-sm btn-hold btnHoldTwo" id="btnHoldTwo">Hold</button>
+            </div>
+
+            <div class="col-sm holdDice">
+                <button class="btn btn-secondary btn-sm btn-hold btnHoldThree" id="btnHoldThree">Hold</button>
+            </div>
+
+            <div class="col-sm holdDice">
+                <button class="btn btn-secondary btn-sm btn-hold btnHoldFour" id="btnHoldFour">Hold</button>
+            </div>
+
+            <div class="col-sm holdDice">
+                <button class="btn btn-secondary btn-sm btn-hold btnHoldFive" id="btnHoldFive">Hold</button>
+            </div>
+        </div>
+
+        <!-- roll dice and next turn buttons -->
+        <div class="row">
+            <div class="col-sm rollButtonStyle">
+                <button class="rollButton btn btn-light">Roll Dice</button>
+            </div>
+            <div class="col-sm nextTurnStyle">
+                <button class="nextTurnButton btn btn-light">Next Turn</button>
+            </div>
+        </div>
+
+
+        <!-- upper score table-->
+        <div class="row score">
+
+            <div class="col-sm">
                 <table width="300px">
                     <tr>
                         <td>Ones</td>
@@ -100,8 +121,8 @@
                 </table>
             </div>
 
-
-            <div class="col-md">
+            <!-- lower score table-->
+            <div class="col-sm score">
 
                 <table width="300px">
                     <tr>
@@ -145,21 +166,19 @@
                         <td><span id="bottomSum">0</span></td>
                     </tr>
 
-               
                 </table>
             </div>
-
         </div>
 
+        <div class="row newGame">
+            <button class="newGameButton btn btn-dark">New Game</button>
+        </div>
 
-
-
-        <script src="app.js" charset="utf-8"></script>
     </div>
+
+    <script src="app.js" charset="utf-8"></script>
+
 </body>
 
-<footer>
-    Thanks for playing!
-</footer>
 
 </html>

@@ -5,7 +5,7 @@
 }
 
 .background {
-  background-color: #28a745;
+  background-color: #006400;
 }
 
 .dice {
@@ -18,4 +18,24 @@
 .btn-hold {
   display: block;
   margin: auto;
+}
+
+.holdDice {
+  text-align: center;
+}
+
+.rollButtonStyle {
+text-align: right;
+}
+
+.nextTurnStyle {
+text-align: left;
+}
+
+.score {
+  text-align: center;
+}
+
+.newGame {
+text-align: center;
 }
