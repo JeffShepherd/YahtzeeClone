@@ -4,7 +4,20 @@
 
 // initializeGame();
 
-var rollsLeft = 3;
+let rollsLeft = 3;
+
+var onesValue;
+
+// let topScore = ones + twos + threes + fours + fives + sixes;
+
+// let bottomScore = [threeOfAKind, fourOfAKind, fullHouse, smStraight, lgStraight, yahtzee, chance];
+
+// document.getElementById("ones").value = onesValue;
+
+
+
+
+
 
 //on click of roll button: generate random numbers 1-6 and show corresponding dice png//
 
@@ -12,12 +25,11 @@ document.querySelector(".rollButton").addEventListener("click", function() {
 
 if (rollsLeft > 0) {
 // 1. generate random numbers
-var dice1 = Math.floor(Math.random() * 6) + 1;
+let dice1 = Math.floor(Math.random() * 6) + 1;
 var dice2 = Math.floor(Math.random() * 6) + 1;
 var dice3 = Math.floor(Math.random() * 6) + 1;
 var dice4 = Math.floor(Math.random() * 6) + 1;
 var dice5 = Math.floor(Math.random() * 6) + 1;
-var dice6 = Math.floor(Math.random() * 6) + 1;
 
 // 2. display result
 document.getElementById("dice-1").style.display = "block";
@@ -30,15 +42,14 @@ document.getElementById("dice-4").style.display = "block";
 document.getElementById("dice-4").src = "dice-" + dice4 + ".png";
 document.getElementById("dice-5").style.display = "block";
 document.getElementById("dice-5").src = "dice-" + dice5 + ".png";
-document.getElementById("dice-6").style.display = "block";
-document.getElementById("dice-6").src = "dice-" + dice6 + ".png";
+
 
 // 3. deduct 1 from roll count
 rollsLeft--;
 
 } else {
 // document.querySelector(".rollButton").style.display = 'none';
-document.querySelector(".rollButton").classList.toggle("active");
+document.querySelector(".rollButton").classList.toggle("btn-dark");
 }
 
 });
@@ -47,8 +58,8 @@ document.querySelector(".rollButton").classList.toggle("active");
 
 // button action for next turn which allows more rolls//
 document.querySelector('.nextTurnButton').addEventListener('click', function(){
-  var rollsLeft = 3;
-  document.querySelector(".rollButton").classList.toggle("active");
+  rollsLeft += 3;
+  document.querySelector(".rollButton").classList.toggle("btn-dark");
 });
 // 1. reset rollsLeft
 // var rollsLeft = 3;
