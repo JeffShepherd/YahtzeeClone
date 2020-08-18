@@ -74,6 +74,9 @@
             <div class="col-sm nextTurnStyle">
                 <button class="nextTurnButton btn btn-light">Next Turn</button>
             </div>
+            <div class="col-sm addScoresStyle">
+                <button class="addScoresButton btn btn-light">Total Scores</button>
+            </div>
         </div>
 
 
@@ -81,43 +84,44 @@
         <div class="row score">
 
             <div class="col-sm">
-                <table width="300px">
+
+                <table id="topTable" width="300px">
                     <tr>
                         <td>Ones</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input type="number" class="top" id="oneTop"/></td>
                     </tr>
                     <tr>
                         <td>Twos</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input class="top" id="twoTop"/></td>
                     </tr>
                     <tr>
                         <td>Threes</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input class="top" id="threeTop"/></td>
                     </tr>
                     <tr>
                         <td>Fours</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input class="top" id="fourTop"/></td>
                     </tr>
                     <tr>
                         <td>Fives</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input class="top" id="fiveTop"/></td>
                     </tr>
                     <tr>
                         <td>Sixes</td>
-                        <td><input class="top" type="text" name="txt" /></td>
+                        <td><input class="top" id="sixTop"/></td>
                     </tr>
                     <tr>
                         <td>Total Score</td>
-                        <td><span id="topSum">0</span></td>
+                        <td><span id="topSum"></span></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td>Bonus</td>
-                        <td><span id="topSum">0</span></td>
+                        <td><span id=""></span></td>
                     </tr>
                     <tr id="summation">
                         <td>Total</td>
-                        <td><span id="topSum">0</span></td>
-                    </tr>
+                        <td><span id=""></span></td>
+                    </tr> -->
                 </table>
             </div>
 
@@ -157,14 +161,14 @@
                         <td>Total of Bottom</td>
                         <td><span id="topSum">0</span></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td>Total of Top</td>
                         <td><span id="topSum">0</span></td>
                     </tr>
                     <tr id="summation">
                         <td>Grand Total</td>
                         <td><span id="bottomSum">0</span></td>
-                    </tr>
+                    </tr> -->
 
                 </table>
             </div>

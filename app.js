@@ -1,7 +1,34 @@
 //
 // set variables//
-
+// 
 let rollsLeft = 3;
+
+let ones = twos = threes = threes = fours = fives = sixes = 0;
+let topSum = [ones.value, twos.value, threes.value, fours.value, fives.value, sixes.value];
+
+function scoreAdd() {
+
+  ones.value = document.getElementById("oneTop");
+  twos = document.getElementById("twoTop").value;
+  threes = document.getElementById("threeTop").value;
+  fours = document.getElementById("fourTop").value;
+  fives = document.getElementById("fiveTop").value;
+  sixes = document.getElementById("sixTop").value;
+
+
+};
+
+document.querySelector(".addScoresButton").addEventListener("click", function () {
+
+  scoreAdd();
+
+});
+
+
+
+
+
+
 
 
 
@@ -56,7 +83,6 @@ document.querySelector('.nextTurnButton').addEventListener('click', function () 
   reset();
 
 });
-
 
 
 // button action for new game//
