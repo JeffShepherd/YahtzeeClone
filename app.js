@@ -4,32 +4,33 @@
 let rollsLeft = 3;
 
 let ones = twos = threes = threes = fours = fives = sixes = 0;
-let topSum = [ones.value, twos.value, threes.value, fours.value, fives.value, sixes.value];
+let topSum = [0, 0, 0, 0, 0, 0];
+var input = document.querySelectorAll(".top");
+
 
 function scoreAdd() {
 
-  ones.value = document.getElementById("oneTop");
-  twos = document.getElementById("twoTop").value;
-  threes = document.getElementById("threeTop").value;
-  fours = document.getElementById("fourTop").value;
-  fives = document.getElementById("fiveTop").value;
-  sixes = document.getElementById("sixTop").value;
-
+  topSum.splice(0, 1, (document.getElementById("oneTop").value));
+  topSum.splice(1, 1, (document.getElementById("twoTop").value));
+  topSum.splice(2, 1, (document.getElementById("threeTop").value));
+  topSum.splice(3, 1, (document.getElementById("fourTop").value));
+  topSum.splice(4, 1, (document.getElementById("fiveTop").value));
+  topSum.splice(5, 1, (document.getElementById("sixTop").value));
 
 };
 
+function addTopSum(total, num) {
+  return total - num;
+};
+
+
+input.addEventListener("keyup", scoreAdd());
+
 document.querySelector(".addScoresButton").addEventListener("click", function () {
 
-  scoreAdd();
+  document.getElementById("topSum").innerHTML = topSum.reduce(addTopSum);
 
 });
-
-
-
-
-
-
-
 
 
 //on click of roll button: generate random numbers 1-6 and show corresponding dice png//
