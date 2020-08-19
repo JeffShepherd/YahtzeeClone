@@ -5,8 +5,6 @@ let rollsLeft = 3;
 
 let ones = twos = threes = threes = fours = fives = sixes = 0;
 let topSum = [0, 0, 0, 0, 0, 0];
-var input = document.querySelectorAll(".top");
-
 
 function scoreAdd() {
 
@@ -18,17 +16,17 @@ function scoreAdd() {
   topSum.splice(5, 1, (document.getElementById("sixTop").value));
 
 };
+ 
 
+// /////this function is rerturning a negative number *** fix
 function addTopSum(total, num) {
-  return total - num;
+  return total + num;
 };
 
 
-input.addEventListener("keyup", scoreAdd());
-
 document.querySelector(".addScoresButton").addEventListener("click", function () {
 
-  document.getElementById("topSum").innerHTML = topSum.reduce(addTopSum);
+  document.getElementById("topSum").innerHTML = "your score is: " + topSum.reduce(addTopSum);
 
 });
 
